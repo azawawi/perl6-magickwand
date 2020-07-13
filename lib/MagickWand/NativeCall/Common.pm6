@@ -21,6 +21,8 @@ sub library is export {
     return sprintf("lib%s.so.5", LIB);
   } elsif library-exists("libMagickWand-6.Q16.so") {
     return "libMagickWand-6.Q16.so";
+  } elsif library-exists("libMagickWand-7.Q16.so") {
+    return "libMagickWand-7.Q16.so";
   }
 
   # Fallback
